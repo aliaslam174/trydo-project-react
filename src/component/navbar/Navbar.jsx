@@ -16,12 +16,12 @@ function Navbar() {
         {
             id:"1",
             item:"Home",
-            link:"#Home"
+            link:"/"
         },
         {
             id:"2",
             item:"Cards",
-            link:"#Cards"
+            link:"#cards"
         },
         {
             id:"3",
@@ -65,7 +65,7 @@ function Navbar() {
         <div className=' items-center hidden lg:block'>
             {
                 navitems.map((item)=>{
-               return <a href='' className='xl:px-5 lg:px-2 py-3 hover:text-[#f9004d] inline-block font-medium ' key={item.id}>{item.item}</a>
+               return <a href={item.link} className='xl:px-5 lg:px-2 py-3 hover:text-[#f9004d] inline-block font-medium ' key={item.id}>{item.item}</a>
                 })
             }
             
@@ -95,7 +95,7 @@ function Navbar() {
         </div>
     </div> */}
      <Drawer title="Basic Drawer" onClose={onClose} open={open}>
-     <div className=' '>
+     <div className=' text-center  text-2xl'>
             {
                 navitems.map((item)=>{
                return <a href='' className='px-5 py-3 hover:text-[#f9004d] block font-medium ' key={item.id}>{item.item}</a>

@@ -17,41 +17,41 @@ function App() {
 
   return (
     <>
-      <div className='relative'>
+      <div className='relative' >
         <section className='bg-black '>
           <Navbar />
           <Header />
 
         </section>
-        <section className='bg-[#fff] dark:bg-[#191919] '>
+        <section className='bg-[#fff] dark:bg-[#191919] ' id='cards'>
           <CardsFeatures />
 
         </section>
-        <section className='bg-[#f8f9fc] dark:bg-[#101010] pb-10 '>
+        <section className='bg-[#f8f9fc] dark:bg-[#101010] pb-10 ' id='Portfolio'>
           <PortFolio />
 
         </section>
-        <section className='bg-[#191919] '>
+        <section className='bg-[#191919] ' id='Facts'>
           <Facts />
 
         </section>
-        <section className='bg-[#f8f9fc] '>
+        <section className='bg-[#f8f9fc] ' id='Team'>
           <Team />
 
         </section>
-        <section className='bg-white '>
+        <section className='bg-white ' id='Testimonials'>
           <Customer />
 
         </section>
-        <section className='bg-[#f8f9fc]'>
+        <section className='bg-[#f8f9fc]' id='News'>
           <News />
 
         </section>
-        <section className='bg-[#fff]'>
+        <section className='bg-[#fff]' id='Sponserd'>
           <Brands />
 
         </section>
-        <section className='bg-[#1c1d23]'>
+        <section className='bg-[#1c1d23]' >
           <Footer />
 
         </section>

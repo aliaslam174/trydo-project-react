@@ -65,12 +65,18 @@ function News() {
         
                     {
                         team.map((item) => {
-                            return <div className='mb-8 p-5'>
+                            return <div className='mb-8 p-5 relative'>
                                 
+                                <div className='relative'>
                                 <img src={item.path} alt="" className='rounded-xl  w-full' />
-                              
+                                <div className='hover:bg-gradient-to-r from-[#ff004f]  to-[#000]  cursor-pointer rounded-xl  w-full z-10 h-full absolute top-0 opacity-75'></div>
+                                </div>
 
-
+                                <div className=' absolute bottom-8 left-14 z-20 w-[320px]'>
+                  <p className='text-[#c6c9d8] mb-4'>{item.title}</p>
+                  <h1 className='text-xl text-white mb-4'>{item.content}</h1>
+                  <button className='px-6 py-2 border  inline-block border-white hover:bg-[#f9004d]  hover:border-transparent rounded-lg hover:-translate-y-1 transition delay-150 duration-300 ease-in-out text-white'>READ MORE</button>
+                </div>
                             </div>
                         })
 

@@ -45,10 +45,17 @@ function Team() {
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5  px-5  lg:p-0'>
                     {
                         team.map((item) => {
-                            return <div className='mb-8 hover:bg-gray-950'>
-                                
-                                <img src={item.path} alt="" className='rounded-xl hover:z-10 w-full' />
-                                {/* <div className='hover:absolute top-0 left-0 hover:bg-black w-[100%] hover:z-20'></div> */}
+                            return <div className='mb-8  relative'>
+
+                                <div className=' '>
+                                    <img src={item.path} alt="" className='rounded-xl hover:z-10 w-full' />
+                                    <div className='hover:bg-gradient-to-r from-[#ff004f]  to-[#000]  cursor-pointer rounded-xl  w-full z-10 h-full absolute top-0 opacity-75'></div>
+                                </div>
+                                {/* <div className=' absolute  bottom-0 left-14 z-20 w-[320px]'>
+                                    <p className='text-[#c6c9d8] mb-4'></p>
+                                    <h1 className='text-xl text-white mb-4'>aliaslam</h1>
+                                    
+                                </div> */}
 
 
                             </div>
