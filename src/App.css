@@ -1,0 +1,15 @@
+html{
+    overflow-x: hidden;
+}
+@media screen and (max-width: 768px) {
+    .slick-slide {
+      width: 100%; /* Make slides take up full width */
+    }
+  
+    .slick-prev,
+    .slick-next {
+      display: none; /* Hide navigation arrows on smaller screens */
+    }
+  
+    /* Adjust other styles as needed for smaller screens */
+  }
