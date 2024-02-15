@@ -4,20 +4,27 @@ import { BsSunFill } from "react-icons/bs";
 import { FaMoon } from "react-icons/fa";
 function Darkmod() {
     const [theme, setTheme] = useState(false);
-    useEffect(() => {
 
-        if (theme == false) {
-          document.documentElement.classList.remove('dark');
-        } else {
+
+    useEffect(() => {
+        let isDark = localStorage.getItem("isDark");
+        if (isDark == 'true') {
           document.documentElement.classList.add('dark');
+          setTheme("true");
         }
-    
-        // save in local storage
-        localStorage.setItem("darkMode", theme);
-    
-      }, [theme]);
-    const toggleDarkMode = () => {
-        setTheme((theme) => !theme);
+      }, [])
+
+      const toggleDarkMode = () => {
+        let isDark = localStorage.getItem("isDark");
+        if (isDark == null || isDark == 'false') {
+          localStorage.setItem('isDark', true);
+          document.documentElement.classList.add('dark');
+          setTheme("true");
+        } else {
+          localStorage.setItem('isDark', false);
+          document.documentElement.classList.remove('dark');
+          setTheme(null);
+        }
       };
   return (
     <>

@@ -1,4 +1,5 @@
 
+import { useEffect } from 'react'
 import './App.css'
 import CardsFeatures from './component/CardsFeatures/CardsFeatures'
 import Brands from './component/brandlogo/Brands'
@@ -11,8 +12,15 @@ import News from './component/news/News'
 import PortFolio from './component/portfolio/PortFolio'
 import Customer from './component/sustomergallery/Customer'
 import Team from './component/team/Team'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import ScrollToTop from "react-scroll-to-top";
 
 function App() {
+
+  useEffect( () => {
+    AOS.init();
+  }, [])
 
 
   return (
@@ -27,7 +35,7 @@ function App() {
           <CardsFeatures />
 
         </section>
-        <section className='bg-[#f8f9fc] dark:bg-[#101010] pb-10 ' id='Portfolio'>
+        <section className='bg-[#efefef] dark:bg-[#101010] pb-10 ' id='Portfolio'>
           <PortFolio />
 
         </section>
@@ -47,7 +55,7 @@ function App() {
           <News />
 
         </section>
-        <section className='bg-[#fff]' id='Sponserd'>
+        <section className='bg-[#fff] dark:bg-[#191919]' id='Sponserd'>
           <Brands />
 
         </section>
@@ -60,7 +68,10 @@ function App() {
         </div>
 
       </div>
-
+      <div>
+      <ScrollToTop  smooth />
+      </div>
+      
     </>
   )
 }
