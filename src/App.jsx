@@ -63,7 +63,7 @@ function App() {
           <Footer />
 
         </section>
-        <div className='fixed bottom-10'>
+        <div className='fixed bottom-10 left-4'>
           <Darkmod />
         </div>
 
