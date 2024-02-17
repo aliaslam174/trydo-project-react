@@ -48,17 +48,17 @@ function Brands() {
     ]
     return (
         <>
-            <div className='grid grid-cols-2 sm:grid-cols-3  lg:grid-cols-5  container mx-auto py-32 place-items-center h-screen'>
+            <div className='grid grid-cols-2 sm:grid-cols-3  lg:grid-cols-5  container mx-auto py-32 place-content-around place-items-center h-screen'>
 
                 {
                     brandlogo.map((item) => {
-                        return <div className='px-12  '>
-                            <img src={item.path} alt="" width={120} className='opacity-[.6] hover:opacity-100 dark:invert cursor-pointer mb-8 hover:scale-110 transition delay-300 duration-300 ease-in-out' />
-                        </div>
+                        return <img src={item.path} alt="" width={120} className='opacity-[.6] hover:opacity-100 dark:invert cursor-pointer mb-8 hover:scale-110 transition delay-300 duration-300 ease-in-out' />
+                        
 
                     })
                 }
             </div>
+         
 
 
 

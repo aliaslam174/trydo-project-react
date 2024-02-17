@@ -38,7 +38,7 @@ function Team() {
     return (
         <>
             <div className='  container mx-auto py-28 grid grid-cols-1 text-center md:text-left'>
-                <h1 className='text-5xl font-bold mb-4'>Skilled Team</h1>
+                <h1 className='text-5xl font-bold mb-4 dark:text-white'>Skilled Team</h1>
                 <p className='text-[#717173] mb-8 text-[18px]'>There are many variations of passages of Lorem Ipsum available,<br />
                     but the majority have suffered alteration.</p>
 

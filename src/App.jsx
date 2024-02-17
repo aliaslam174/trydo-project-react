@@ -43,15 +43,15 @@ function App() {
           <Facts />
 
         </section>
-        <section className='bg-[#f8f9fc] ' id='Team'>
+        <section className='bg-[#f8f9fc] dark:bg-[#101010]' id='Team'>
           <Team />
 
         </section>
-        <section className='bg-white ' id='Testimonials'>
+        <section className='bg-white dark:bg-[#191919] ' id='Testimonials'>
           <Customer />
 
         </section>
-        <section className='bg-[#f8f9fc]' id='News'>
+        <section className='bg-[#f8f9fc] dark:bg-[#101010] dark:text-white' id='News'>
           <News />
 
         </section>
